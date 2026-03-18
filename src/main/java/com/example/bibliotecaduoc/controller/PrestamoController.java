@@ -28,7 +28,8 @@ public class PrestamoController {
     public Prestamo buscarPrestamo(@PathVariable int id){
         return prestamoService.getPrestamoId(id);
     }
-    @GetMapping("{id}")
+
+    @PutMapping("{id}")
     public Prestamo actualizarPrestamo(@PathVariable int id, @RequestBody Prestamo pr){
         return prestamoService.updatePrestamo(pr);
     }

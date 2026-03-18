@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -13,8 +13,8 @@ public class Prestamo {
     private int idPrestamo;
     private int idLibro;
     private String runSolicitante;
-    private Date fechaSolicitud;
-    private Date fechaEntrega;
+    private LocalDate fechaSolicitud;
+    private LocalDate fechaEntrega;
     private int cantidadDias;
     private int multa;
 }
